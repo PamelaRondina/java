@@ -1,4 +1,6 @@
-public class Main {
+package atividades;
+
+public class aula_01 {
 
     public static void main(String[] args) {
         // write your code here
