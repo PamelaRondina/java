@@ -116,7 +116,7 @@ True
 Código | Descrição
 -|-
 && | e (and)
-.```||``` | ou (or)
+![image](https://user-images.githubusercontent.com/108991648/189492789-dabe6dd0-849e-49be-b001-c824b3fb6697.png) | ou (or)
 
 ### Atividade: aula_02_b.java
 
