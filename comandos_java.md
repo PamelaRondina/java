@@ -37,3 +37,6 @@ System.out.println("texto"); | print
 ? | if/se (operador ternário)
 : | else/se não (operador ternário)
  Operador cast: `(float)`| Utilizar em decimal
+ case | caso
+ break; | parada
+ default | Caso não encontre o resultado.
