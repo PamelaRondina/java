@@ -40,3 +40,6 @@ System.out.println("texto"); | print
  case | caso
  break; | parada
  default | Caso não encontre o resultado.
+System.out.println(nomeDaVariavel.toUpperCase()); | Maiúsculas
+System.out.println(nomeDaVariavel.toLowerCase()); | Minúsculas
+System.out.println(nomeDaVariavel.length()); | Contagem caracteres
