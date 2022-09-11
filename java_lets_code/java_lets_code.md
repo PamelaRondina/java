@@ -165,7 +165,7 @@ _______
   - bloco if/else
   - mais de uma condição if/else/if/else
   - estrutura `switch()`
-  - `break;`
+  - `case`, `break;` and `default`
 
 ### Atividade: aula_03_a.java
 
@@ -177,16 +177,18 @@ Utilizando if e else
 public class aula_03_a {
     public static void main (String[] args){
         
-        int nota = 50;
+        int nota = 70;
         
         if (nota >= 70){
-            System.out.println("Aluno aprovado!");
+            System.out.println("Aprovado!");
         } else {
             System.out.println("Não aprovado!");
         }
 }
 }
 ```
+Resultado:
+Aprovado!
 
 ### Atividade: aula_03_b.java
 
@@ -233,9 +235,123 @@ public class aula_03_b {
 }
 }
 ```
+
+Resultado:
+Reprovado
 _________
 
 ## Aula 04
+
+- [x] Manipulação de String:
+  - letras maiúscula;
+  - letras minúsculas;
+  - quantos caracteres a string possui
+
+- [x] Manipulação de Datas:
+  - Horário, dia, hora e mês
+
+### Atividade: aula_04_a.java
+
+**maiúsculas**
+System.out.println(nomeDaVariavel.toUpperCase());
+    
+**minúsculas**
+System.out.println(nomeDaVariavel.toLowerCase());
+
+**contagem caracteres**
+ System.out.println(nomeDaVariavel.length());
+
+**comparar Strings**
+System.out.println(nomeDaPrimeiraVariavel.equals(nomeDaSegundaVariavel));
+
+*Ignorando maiúsculas e minúsculas*
+System.out.println(nomeDaPrimeiraVariavel.equalIgnoreCase(nomeDaSegundaVariavel));-
+
+```java
+package atividades;
+
+public class aula_04_a {
+    public static void main (String[] args){
+
+        String name = "Pamela";
+        System.out.println(name.toUpperCase());
+        System.out.println(name.toLowerCase());
+        System.out.println(name.length());
+
+}
+}
+```
+
+Resultado:
+PAMELA
+pamela
+6
+
+### Atividade: aula_04_b.java
+
+**Importar dados de Datas**
+import java.time.LocalDate;
+
+**Printf**
+Define o formato e depois define os valores
+
+System.out.printf("")
+
+
+**Dia da semana**
+
+```java
+LocalDate hoje = LocalDate.now();
+System.out.println(hoje.getDayOfWeek());
+```
+
+```java
+package atividades;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.TextStyle;
+import java.util.Locale;
+
+public class aula_04_b {
+    public static void main (String[] args){
+        //Olá, [nome]. Hoje é [dia-da-semana], Bom Dia/Boa Tarde/Boa Noite!
+
+        String name = "Pamela";
+
+        //ISO 8601
+        LocalDate hoje = LocalDate.now();
+        Locale brasil = new Locale("pt", "BR");
+        
+        //System.out.println(hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil)); 
+        String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
+        
+        String saudacao;
+        LocalDateTime agora = LocalDateTime.now();
+
+        if (agora.getHour() >= 0 && agora.getHour() < 12) {
+            saudacao = "bom dia!";
+        } else if (agora.getHour() >= 12 && agora.getHour() < 18){
+            saudacao = "boa tarde!";
+        } else if (agora.getHour() >=18 && agora.getHour() < 24){
+            saudacao = "boa noite!";
+        } else {
+            saudacao = "Olá";
+        }
+
+        // %s = argumento de string 
+        // %n = quebra de linha 
+        System.out.printf("Olá, %s. Hoje é %s, %s.%n", name, diaSemana, saudacao);
+    }
+}
+```
+
+Resultado:
+Olá, Pamela. Hoje é domingo, boa tarde!.
+
+_________
+
+
 
 
 
