@@ -351,6 +351,13 @@ Olá, Pamela. Hoje é domingo, boa tarde!.
 
 _________
 
+## Aula 05
+
+- [x] Laços númericos
+    - Repetir trechos de um código`
+    - laço `for`
+
+### Atividade: aula_05_a.java
 
 
 
