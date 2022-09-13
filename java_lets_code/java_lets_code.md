@@ -95,8 +95,6 @@ Uma sequência de passos a ser seguida.
 
 ### Atividade: aula_02_a.java
 ```java
-package atividades;
-
 public class aula02 {
 
   public static void main (String[] args){
@@ -121,8 +119,6 @@ Código | Descrição
 ### Atividade: aula_02_b.java
 
 ```java
-package atividades;
-
 public class aula_02_b {
 
     public static void main (String[] args){
@@ -172,8 +168,6 @@ _______
 Utilizando if e else
 
   ```java
-  package atividades;
-
 public class aula_03_a {
     public static void main (String[] args){
         
@@ -199,8 +193,6 @@ Aprovado!
 
 
 ```java
-package atividades;
-
 public class aula_03_b {
     public static void main (String[] args){
 
@@ -253,23 +245,25 @@ _________
 ### Atividade: aula_04_a.java
 
 **maiúsculas**
-System.out.println(nomeDaVariavel.toUpperCase());
+
+`System.out.println(nomeDaVariavel.toUpperCase());`
     
 **minúsculas**
-System.out.println(nomeDaVariavel.toLowerCase());
+
+`System.out.println(nomeDaVariavel.toLowerCase());`
 
 **contagem caracteres**
- System.out.println(nomeDaVariavel.length());
+
+ `System.out.println(nomeDaVariavel.length());`
 
 **comparar Strings**
-System.out.println(nomeDaPrimeiraVariavel.equals(nomeDaSegundaVariavel));
+
+`System.out.println(nomeDaPrimeiraVariavel.equals(nomeDaSegundaVariavel));`
 
 *Ignorando maiúsculas e minúsculas*
-System.out.println(nomeDaPrimeiraVariavel.equalIgnoreCase(nomeDaSegundaVariavel));-
+`System.out.println(nomeDaPrimeiraVariavel.equalIgnoreCase(nomeDaSegundaVariavel));`
 
 ```java
-package atividades;
-
 public class aula_04_a {
     public static void main (String[] args){
 
@@ -290,12 +284,14 @@ pamela
 ### Atividade: aula_04_b.java
 
 **Importar dados de Datas**
+
 import java.time.LocalDate;
 
 **Printf**
+
 Define o formato e depois define os valores
 
-System.out.printf("")
+`System.out.printf("")`
 
 
 **Dia da semana**
@@ -306,8 +302,6 @@ System.out.println(hoje.getDayOfWeek());
 ```
 
 ```java
-package atividades;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.TextStyle;
@@ -356,14 +350,87 @@ _________
 - [x] Laços númericos
     - Repetir trechos de um código`
     - laço `for`
+    - Variar de 01 em 01, de 02 em 02 etc.;
+    - Laço aninhado
 
 ### Atividade: aula_05_a.java
 
+- Variar de 1 em 1
 
+```java
+       for (int i = 1; i <= 10; i++){
+            System.out.println(i);
+        }
+```
+- Variar de 2 em 2, em números ímpares pois iniciei em 1
 
+```java
+       for (int i = 1; i <= 10; i+=2){
+            System.out.println(i);
+        }
+```
+```java
+public class aula_05_a {
+    
+    public static void main (String[] args){
+        // 1 2 3 4 5 6 7 8 9 10
+        // para uma variável que inicia em 1, e vai até 10, mudando de 1-por-1, faça:
 
+        for (int i = 1; i <= 10; i++){
+            System.out.println(i);
+        }
+    }
+}
+```
 
+Resultado:
+ 1 2 3 4 5 6 7 8 9 10
 
+### Atividade: aula_05_b.java
+
+- Aninhar mais de um laço utilizar as letras i, j, k e l
+
+```java
+    public class aula_05_b {
+    
+    public static void main (String[] args){
+        // 1 2 3 4 5 6 7 8 9 10
+        // para uma variável que inicia em 1, e vai até 10, mudando de 1-por-1, faça:
+
+        for (int i = 1; i <= 10; i++){
+            for (int j = 1; j <= 10; j++){
+            System.out.println(j + " x " + i + " = " + j * i);
+            }
+        }
+    }
+}
+```
+Resultado:
+1 x 1 = 1
+2 x 1 = 2
+3 x 1 = 3
+4 x 1 = 4
+5 x 1 = 5
+6 x 1 = 6
+7 x 1 = 7
+8 x 1 = 8
+9 x 1 = 9
+10 x 1 = 10
+
+1 x 2 = 2
+2 x 2 = 4
+3 x 2 = 6
+4 x 2 = 8
+5 x 2 = 10
+6 x 2 = 12
+7 x 2 = 14
+8 x 2 = 16
+9 x 2 = 18
+10 x 2 = 20
+
+...
+
+__________
 
 
 

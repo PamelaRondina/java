@@ -1,4 +1,4 @@
-package atividades;
+
 
 public class aula_03_b {
     public static void main (String[] args){
