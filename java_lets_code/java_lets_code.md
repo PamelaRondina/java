@@ -549,7 +549,7 @@ Resultado:
 O formato da saída é diferente
 [A, B, C, D, E]
 
-### Maior, Menor e Média - Atividade: aula_06**
+### Maior, Menor e Média - Atividade: aula_06
 
 #### aula_06_e.java
 
@@ -582,3 +582,10 @@ public class aula_06_e {
     }
 ```
 
+## Aula 07
+
+- [x] Funções
+
+As funções são feitas dentro do método `main`
+código feito fora das {} do main
+ 
