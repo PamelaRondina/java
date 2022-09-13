@@ -432,6 +432,153 @@ Resultado:
 
 __________
 
+## Aula 06
+- [x] Vetores ou Arrays [listas]
+- [x] Menor, Maior e Média
+
+Java é uma linguagem fortemente tipada, ao declararmos uma array seu tipo não deve ser mesclado, por exemplo, não podemos juntar `int` com `String`.
 
 
+### Tipos de Arrays - Atividade: aula_06**
+- Informar no início:
+    - Tipo de array: int, String, float;
+    - O tamanho 
+
+#### aula_06_a.java
+
+```java
+public class aula_06_a {
+    
+    public static void main(String[] args) {
+
+        //mencionar o tipo da array {int, Sting, float...}
+        // [5] tamanho da array
+        int[] numeros = new int [5];
+
+        //índices == posição da array [0] [1] [2] [3] [4] índice n-1
+        numeros [0] = 1;
+        numeros [1] = 2;
+        numeros [2] = 3;
+        numeros [3] = 4;
+        numeros [4] = 5;
+
+        //acessar os elementos dentro da array: laço for
+        // numeros.lenght == tamanho da array (indicado no início [5])
+        for (int i=0; i < numeros.length; i++)
+            System.out.println(numeros[i]);
+    }
+}
+```
+
+Resultado:
+1 2 3 4 5
+
+#### aula_06_b.java
+
+```java
+public class aula_06_b {
+    
+     public static void main(String[] args) {
+
+        //mencionar o tipo da array {int, Sting, float...}
+        // [5] tamanho da array
+        String[] letras = new String [5];
+
+        //índices == posição da array [0] [1] [2] [3] [4] índice n-1
+        // por ser String "assim"
+        letras [0] = "A";
+        letras [1] = "B";
+        letras [2] = "3";
+        letras [3] = "H";
+        letras [4] = "5";
+
+        //acessar os elementos dentro da array: laço for
+        // numeros.lenght == tamanho da array (indicado no início [5])
+        // int e var funcionam
+        for (var i=0; i < letras.length; i++)
+            System.out.println(letras[i]);
+    }
+}
+```
+
+Resultado:
+
+A, B, 3, H, 5
+
+#### aula_06_c.java
+
+- Sem informar o tamanho da array
+    - Código menor
+    - Informar o tipo no início
+
+```java
+public class aula_06_c {
+    
+     public static void main(String[] args) {
+
+        // Sem informar o tamanho da array
+        
+        String[] letras = { "A", "B", "C", "D", "E"};
+        for (var i=0; i < letras.length; i++)
+            System.out.println(letras[i]);
+    }
+}
+```
+
+Resultado:
+A, B, C, D, E
+
+#### aula_06_d.java
+
+- Array chamando `arrays.toString`
+
+```java
+public class aula_06_d {
+    
+     public static void main(String[] args) {
+
+        // Sem informar o tamanho da array
+        String[] letras = { "A", "B", "C", "D", "E"};
+        
+        System.out.println(Arrays.toString(letras));
+    }
+}
+```
+
+Resultado:
+O formato da saída é diferente
+[A, B, C, D, E]
+
+### Maior, Menor e Média - Atividade: aula_06**
+
+#### aula_06_e.java
+
+```java
+public class aula_06_e {
+    
+     public static void main(String[] args) {
+        int[] numeros = {9, 10, 12, 25, 2};
+        int maior = numeros[0];
+        int menor = numeros[0];
+        int media = 0;
+
+        //laço numérico
+        for (int i=0; i < numeros.length; i++){
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+            if (numeros[i] < menor) {
+                menor = numeros[i];
+            }
+
+            //somando e atribuindo == media + numeros[i]
+            media += numeros[i];
+        }
+            System.out.println("Maior: " + maior);
+            System.out.println("Menor: " + menor);
+            System.out.println("Media: " + media/numeros.length);
+            
+        }  
+    }
+```
 
