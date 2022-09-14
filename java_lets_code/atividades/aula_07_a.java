@@ -2,11 +2,12 @@
 public class aula_07_a {
     
     public static void main(String[] args) {
-        String nome = "Let's Code";
-        saudacao(nome);
+        String nomeOriginal = "Let's Code";
+        // passar o parâmetro nomeOriginal para as () da função.
+        saudacao(nomeOriginal);
     }
 
-    public static void saudacao(String nome) {
-        System.out.println("Hello, " + nome);
+    public static void saudacao(String nomeParametro) {
+        System.out.println("Hello, " + nomeParametro);
     }
 }
