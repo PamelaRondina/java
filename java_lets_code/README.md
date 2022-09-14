@@ -585,7 +585,56 @@ public class aula_06_e {
 ## Aula 07
 
 - [x] Funções
+- [x] Definir funções
+- [x] Definir parâmetros
+- [x] Definir retorno de resultados
 
-As funções são feitas dentro do método `main`
-código feito fora das {} do main
+
+> Em java, o ponto de partida é a partir do método main
+
+- As funções são feitas dentro do método `main` e o código feito fora das {} do main.
+- Para chamar uma função é fundamental a inclusão dos () após a sua chamada: `exemplo();`
+
+### Método main sem retorno
+
+#### aula_07_a.java
+
+```java
+public class aula_07_a {
+    
+    public static void main(String[] args) {
+        String nomeOriginal = "Let's Code";
+        // passar o parâmetro nomeOriginal para as () da função.
+        saudacao(nomeOriginal);
+    }
+
+    public static void saudacao(String nomeParametro) {
+        System.out.println("Hello, " + nomeParametro);
+    }
+}
+```
+
+Resultado:
+
+Hello, Let's Code
+
+### Método main com retorno
+
+#### aula_07_b.java
+
+```java
+public class aula_07_b {
+    
+    public static void main(String[] args) {
+     int resultado = soma (2, 3);
+     System.out.println(resultado);
+    }
+
+    public static int soma(int a, int b) {
+        return a + b;
+    }
+}
+```
+
+
  
