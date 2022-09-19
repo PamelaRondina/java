@@ -16,10 +16,10 @@ O equivalente a 22 C é 71,6 F.
 //usuário preenche informação no terminal
     Scanner usuario = new Scanner(System.in);
     System.out.println("Escolha o valor em C°");
-    int celcius = usuario.nextInt();
-    float fahrenheit= (celcius * 9/5) + 32;
+    double celcius = usuario.nextInt();
+    double fahrenheit= celcius * 9/5 + 32;
 
-    System.out.println("O equivalente a " + celcius + "Cº é " + fahrenheit + "F°.");
+    System.out.println("O equivalente a " + celcius + "C " + "é " + fahrenheit + "F.");
 
     }
 }
